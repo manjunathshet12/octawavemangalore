@@ -7,58 +7,201 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
       background: #f5f7fb;
       color: #222;
+      line-height: 1.6;
     }
 
     header {
       background: #2b2e83;
       color: white;
-      padding: 30px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
 
-    section {
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      margin-top: 30px;
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.15em;
+      margin: 10px 0;
+    }
+
+    .cta-btn {
+      background: #ffd700;
+      color: black;
+      padding: 14px 28px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
       border-radius: 6px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px 20px;
+      background: white;
+      border-radius: 8px;
     }
 
     h2 {
       color: #2b2e83;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-box {
+      background: #f0f2ff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .highlight {
+      background: #fff3cd;
+      border-left: 6px solid #ff9800;
+      padding: 18px;
+      font-size: 1.1em;
+      margin-top: 15px;
+    }
+
+    footer {
+      background: #2b2e83;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 
 <body>
 
+<!-- HERO SECTION -->
 <header>
   <h1>Octawave Technology</h1>
-  <h3>VLSI Training Institute – Mangalore</h3>
-  <p>Courses, Training & Internship in VLSI Design</p>
+  <p>
+    Job-Oriented VLSI Training & Internship<br>
+    Analog, Digital & Physical Design
+  </p>
+  <p style="font-size:1.1em;">
+    📞 Call / WhatsApp: <b>7349565249</b>
+  </p>
+  <a href="tel:7349565249" class="cta-btn">Call Now</a>
 </header>
 
+<!-- ABOUT SECTION -->
 <section>
   <h2>About Octawave Technology</h2>
   <p>
-    Octawave Technology is a VLSI training and internship provider focused on
-    building strong fundamentals and practical skills in semiconductor design.
-    We offer industry-oriented courses and training in VLSI Design.
+    Octawave Technology is a VLSI training and internship provider based in
+    Mangalore, offering industry-oriented courses in semiconductor design.
+    We focus on building strong fundamentals and practical skills required
+    by VLSI and semiconductor companies.
   </p>
-
   <p>
-    Our programs are designed to bridge the gap between academic learning and
-    real-world industry requirements. Along with structured training, students
-    are provided with internship opportunities and hands-on project experience.
+    Our programs combine structured training with hands-on internship
+    opportunities and live project exposure, helping students become
+    job-ready in the VLSI domain.
   </p>
 </section>
 
+<!-- COURSES OFFERED -->
+<section>
+  <h2>Courses Offered</h2>
+  <ul>
+    <li>Analog VLSI Design</li>
+    <li>Analog Layout Design</li>
+    <li>Digital Design Fundamentals</li>
+    <li>Physical Design Basics</li>
+    <li>DRC / LVS / PEX Flow</li>
+  </ul>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section>
+  <h2>Why Choose Octawave Technology?</h2>
+  <div class="features">
+    <div class="feature-box">
+      <b>Industry-Oriented Training</b>
+      <p>Curriculum aligned with real semiconductor industry requirements.</p>
+    </div>
+
+    <div class="feature-box">
+      <b>Hands-on Practical Learning</b>
+      <p>Focus on real design flows, tools, and project-based learning.</p>
+    </div>
+
+    <div class="feature-box">
+      <b>Internship & Live Projects</b>
+      <p>Internship opportunities with practical exposure and certification.</p>
+    </div>
+
+    <div class="feature-box">
+      <b>Career Guidance</b>
+      <p>Resume support, interview preparation, and placement assistance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INTERNSHIP SECTION -->
+<section>
+  <h2>Internship Offered</h2>
+  <ul>
+    <li>Analog Design Internship</li>
+    <li>Analog Layout Internship</li>
+    <li>Live Industry-Oriented Projects</li>
+    <li>Internship Certificate</li>
+  </ul>
+
+  <div class="highlight">
+    💼 Internship includes hands-on projects using real VLSI design methodologies.
+  </div>
+</section>
+
+<!-- FEES SECTION -->
+<section>
+  <h2>Fees & Duration</h2>
+  <p><b>Training Fees:</b> ₹5,000 per month</p>
+  <p>
+    Course duration and internship period can be customized based on
+    student requirements.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <h2>Contact Us</h2>
+  <p>📍 Mangalore</p>
+  <p>📞 <a href="tel:7349565249">7349565249</a></p>
+  <p>📧 manjunathshet12@gmail.com</p>
+  <p style="margin-top:15px;">© 2025 Octawave Technology</p>
+</footer>
+
 </body>
 </html>
-
