@@ -65,31 +65,11 @@
       margin-bottom: 10px;
     }
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .feature-box {
-      background: #f0f2ff;
-      padding: 20px;
-      border-radius: 8px;
-    }
-
-    .highlight {
-      background: #fff3cd;
-      border-left: 6px solid #ff9800;
-      padding: 18px;
-      font-size: 1.1em;
-      margin-top: 15px;
-    }
-
     /* PLACEMENTS */
     .placements {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
       text-align: center;
     }
 
@@ -100,14 +80,29 @@
     }
 
     .student img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.25);
     }
 
     .student p {
-      margin-top: 10px;
+      margin-top: 12px;
       font-size: 14px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-box {
+      background: #f0f2ff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
     }
 
     footer {
@@ -128,20 +123,18 @@
 
 <body>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <header>
   <h1>Octawave Technology</h1>
   <p>
     Job-Oriented VLSI Training & Internship<br>
     Analog, Digital & Physical Design
   </p>
-  <p style="font-size:1.1em;">
-    📞 Call / WhatsApp: <b>7349565249</b>
-  </p>
+  <p style="font-size:1.1em;">📞 Call / WhatsApp: <b>7349565249</b></p>
   <a href="tel:7349565249" class="cta-btn">Call Now</a>
 </header>
 
-<!-- ABOUT SECTION -->
+<!-- ABOUT -->
 <section>
   <h2>About Octawave Technology</h2>
   <p>
@@ -158,22 +151,11 @@
   <ul>
     <li>Analog VLSI Design</li>
     <li>Analog Layout Design</li>
-    <li>Digital Design </li>
+    <li>Digital Design</li>
   </ul>
 </section>
 
-<!-- WHY US -->
-<section>
-  <h2>Why Choose Us?</h2>
-  <div class="features">
-    <div class="feature-box"><b>Industry-Oriented Training</b></div>
-    <div class="feature-box"><b>Hands-on Practical Learning</b></div>
-    <div class="feature-box"><b>Internship & Live Projects</b></div>
-    <div class="feature-box"><b>Career Guidance</b></div>
-  </div>
-</section>
-
-<!-- PLACEMENTS SECTION -->
+<!-- STUDENT PLACEMENTS (MOVED HERE ✅) -->
 <section>
   <h2>Student Placements</h2>
 
@@ -204,6 +186,17 @@
       <p><b>Muhammad Shayan Nesar</b><br>Nitte<br>Texas Instruments</p>
     </div>
 
+  </div>
+</section>
+
+<!-- WHY US -->
+<section>
+  <h2>Why Choose Us?</h2>
+  <div class="features">
+    <div class="feature-box"><b>Industry-Oriented Training</b></div>
+    <div class="feature-box"><b>Hands-on Practical Learning</b></div>
+    <div class="feature-box"><b>Internship & Live Projects</b></div>
+    <div class="feature-box"><b>Career Guidance</b></div>
   </div>
 </section>
 
