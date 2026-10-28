@@ -1,416 +1,626 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Octawave Technology | VLSI Training & Internship – Mangalore</title>
+<title>Octawave Technology | VLSI Training & Internship – Mangalore</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fb;
-      color: #222;
-      line-height: 1.6;
-    }
+<style>
 
-    header {
-      background: #2b2e83;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f6fa;
+    color: #222;
+    line-height: 1.6;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
+header {
+    background: #2b2e83;
+    color: white;
+    padding: 45px 20px;
+    text-align: center;
+}
 
-    header p {
-      font-size: 1.15em;
-      margin: 10px 0;
-    }
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
 
-    .cta-btn {
-      background: #ffd700;
-      color: black;
-      padding: 14px 28px;
-      text-decoration: none;
-      font-size: 1.1em;
-      font-weight: bold;
-      border-radius: 6px;
-      display: inline-block;
-      margin-top: 15px;
-    }
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
 
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 30px 20px;
-      background: white;
-      border-radius: 8px;
-    }
+.btn {
+    display: inline-block;
+    background: #ffd700;
+    color: #222;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
 
-    h2 {
-      color: #2b2e83;
-      margin-bottom: 15px;
-      text-align: center;
-    }
+section {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-    ul {
-      padding-left: 20px;
-    }
+h2 {
+    color: #2b2e83;
+    text-align: center;
+    margin-bottom: 25px;
+}
 
-    ul li {
-      margin-bottom: 10px;
-    }
+h3 {
+    color: #2b2e83;
+}
 
-    /* TRAINER */
-    .trainer {
-      text-align: center;
-    }
+/* ABOUT TRAINER */
 
-    .trainer-name {
-      font-size: 1.6em;
-      color: #2b2e83;
-      margin-bottom: 5px;
-    }
+.trainer {
+    text-align: center;
+}
 
-    .trainer-title {
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
+.trainer-name {
+    font-size: 1.6em;
+    color: #2b2e83;
+    margin-bottom: 5px;
+}
 
-    .experience {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      margin-top: 25px;
-    }
+.trainer-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
-    .experience-box {
-      background: #f0f2ff;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-    }
+.experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
 
-    .experience-box strong {
-      display: block;
-      font-size: 1.2em;
-      color: #2b2e83;
-      margin-bottom: 5px;
-    }
+.experience-box {
+    background: #f0f2ff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
 
-    .patent {
-      margin-top: 30px;
-      padding: 20px;
-      background: #fff8d6;
-      border-left: 5px solid #ffd700;
-      border-radius: 6px;
-      text-align: left;
-    }
+.experience-box strong {
+    display: block;
+    font-size: 1.2em;
+    color: #2b2e83;
+    margin-bottom: 5px;
+}
 
-    /* PLACEMENTS */
-    .placements {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-      text-align: center;
-    }
+.patent {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff8d6;
+    border-left: 5px solid #ffd700;
+    border-radius: 6px;
+    text-align: left;
+}
 
-    .student {
-      background: #f9f9ff;
-      padding: 15px;
-      border-radius: 8px;
-    }
+/* COURSES */
 
-    .student img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.25);
-    }
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
 
-    .student p {
-      margin-top: 12px;
-      font-size: 14px;
-    }
+.course {
+    background: #f0f2ff;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+.course h3 {
+    margin-top: 0;
+}
 
-    .feature-box {
-      background: #f0f2ff;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-    }
+/* PLACEMENTS */
 
-    footer {
-      background: #2b2e83;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 50px;
-    }
+.placement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
 
-    footer a {
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+.student {
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.student img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.student h3 {
+    margin: 5px 0;
+    color: #2b2e83;
+}
+
+.student p {
+    margin: 4px 0;
+}
+
+/* WHY CHOOSE US */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.feature {
+    background: #f0f2ff;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature h3 {
+    margin-top: 0;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    color: #2b2e83;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    background: #2b2e83;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+</style>
 </head>
 
 <body>
 
 <!-- HERO -->
+
 <header>
-  <h1>Octawave Technology</h1>
 
-  <p>
-    Job-Oriented VLSI Training & Internship<br>
-    Analog, Digital & Physical Design
-  </p>
+    <h1>Octawave Technology</h1>
 
-  <p style="font-size:1.1em;">
-    📞 Call / WhatsApp: <b>7349565249</b>
-  </p>
+    <p>
+        Job-Oriented VLSI Training & Internship
+    </p>
 
-  <a href="tel:7349565249" class="cta-btn">Call Now</a>
+    <p>
+        Analog, Digital & Physical Design
+    </p>
+
+    <a class="btn" href="tel:7349565249">
+        Call Now: 7349565249
+    </a>
+
 </header>
 
 
-<!-- ABOUT TRAINER -->
+<!-- ABOUT OCTAWAVE -->
+
 <section>
-  <h2>About the Trainer</h2>
 
-  <div class="trainer">
-
-    <div class="trainer-name">
-      <b>Mr. Manjunath Shet</b>
-    </div>
-
-    <div class="trainer-title">
-      Founder & Lead Trainer – OCTAWAVE Technology
-    </div>
+    <h2>About Octawave Technology</h2>
 
     <p>
-      Manjunath Shet is a VLSI professional and trainer with
-      <b>13+ years of industry experience</b> in semiconductor and
-      VLSI design.
+        <b>Octawave Technology</b> is a Mangalore-based VLSI training and
+        project-support organization focused on preparing students and
+        aspiring engineers for careers in the semiconductor industry.
     </p>
 
-    <h3>Industry Experience</h3>
-
-    <div class="experience">
-
-      <div class="experience-box">
-        <strong>5 Years</strong>
-        STMicroelectronics
-      </div>
-
-      <div class="experience-box">
-        <strong>7 Years</strong>
-        Synopsys
-      </div>
-
-      <div class="experience-box">
-        <strong>1.5 Years</strong>
-        ETEROS
-      </div>
-
-    </div>
-
-    <p style="margin-top:25px;">
-      Industry exposure in
-      <b>Analog Design, Analog Validation, Analog Layout
-      and Mixed-Signal VLSI.</b>
+    <p>
+        We provide <b>job-oriented, industry-focused VLSI training</b>
+        with an emphasis on understanding concepts, developing practical
+        skills and gaining hands-on experience with industry-relevant
+        tools and design methodologies.
     </p>
 
-    <div class="patent">
+    <p>
+        Our training covers key areas of VLSI including
+        <b>Analog VLSI Design, Analog Layout Design, Digital Design,
+        Digital Verification and Physical Design.</b>
+    </p>
 
-      <h3>US Patent</h3>
+    <p>
+        Unlike a syllabus-focused approach, we emphasize
+        <b>practical learning, design exercises, projects, debugging,
+        interview preparation and real-world VLSI problem solving.</b>
+    </p>
 
-      <p>
-        <b>US Patent 10,236,891</b>
-      </p>
+    <p>
+        Students get the opportunity to work on practical assignments
+        and projects that help them understand how concepts learned in
+        engineering translate into actual semiconductor design work.
+    </p>
 
-      <p>
-        <b>
-          "Lock Time Measurement of Clock and Data Recovery Circuit"
-        </b>
-      </p>
+    <p>
+        We also support students with <b>VLSI projects, internships,
+        career guidance and interview preparation</b>, helping them
+        build the technical confidence required to pursue opportunities
+        in the semiconductor industry.
+    </p>
 
-      <p>
-        <b>Issued: March 19, 2019</b>
-      </p>
+    <p>
+        Our objective is simple:
+        <b>to bridge the gap between academic education and the practical
+        skills expected by VLSI and semiconductor companies.</b>
+    </p>
 
-    </div>
-
-  </div>
 </section>
 
 
-<!-- ABOUT OCTAWAVE -->
-<section>
-  <h2>About Octawave Technology</h2>
+<!-- ABOUT TRAINER -->
 
-  <p>
-    Octawave Technology is a VLSI training and internship provider based in
-    Mangalore, offering industry-oriented courses in semiconductor design.
-    We focus on building strong fundamentals and practical skills required
-    by VLSI and semiconductor companies.
-  </p>
+<section>
+
+    <h2>About the Trainer</h2>
+
+    <div class="trainer">
+
+        <div class="trainer-name">
+            <b>Mr. Manjunath Shet</b>
+        </div>
+
+        <div class="trainer-title">
+            Founder & Lead Trainer – OCTAWAVE Technology
+        </div>
+
+        <p>
+            Manjunath Shet is a VLSI professional and trainer with
+            <b>13+ years of industry experience</b> in semiconductor
+            and VLSI design.
+        </p>
+
+        <h3>Industry Experience</h3>
+
+        <div class="experience">
+
+            <div class="experience-box">
+                <strong>5 Years</strong>
+                STMicroelectronics
+            </div>
+
+            <div class="experience-box">
+                <strong>7 Years</strong>
+                Synopsys
+            </div>
+
+            <div class="experience-box">
+                <strong>1.5 Years</strong>
+                ETEROS
+            </div>
+
+        </div>
+
+        <p style="margin-top:25px;">
+            Industry exposure in
+            <b>
+                Analog Design, Analog Validation, Analog Layout
+                and Mixed-Signal VLSI.
+            </b>
+        </p>
+
+        <div class="patent">
+
+            <h3>US Patent</h3>
+
+            <p>
+                <b>US Patent 10,236,891</b>
+            </p>
+
+            <p>
+                <b>
+                    "Lock Time Measurement of Clock and Data Recovery Circuit"
+                </b>
+            </p>
+
+            <p>
+                <b>Issued: March 19, 2019</b>
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
 
 <!-- COURSES -->
-<section>
-  <h2>Courses Offered</h2>
 
-  <ul>
-    <li>Analog VLSI Design</li>
-    <li>Analog Layout Design</li>
-    <li>Digital Design</li>
-  </ul>
+<section>
+
+    <h2>Courses Offered</h2>
+
+    <div class="course-grid">
+
+        <div class="course">
+            <h3>Analog VLSI Design</h3>
+            <p>
+                Practical training in analog circuit design,
+                transistor-level concepts and industry-oriented
+                design techniques.
+            </p>
+        </div>
+
+        <div class="course">
+            <h3>Analog Layout Design</h3>
+            <p>
+                Hands-on training in analog layout, matching,
+                common-centroid techniques, DRC, LVS and
+                industry-relevant layout practices.
+            </p>
+        </div>
+
+        <div class="course">
+            <h3>Digital Design</h3>
+            <p>
+                Practical digital design training covering
+                Verilog, RTL concepts, simulation and
+                interview preparation.
+            </p>
+        </div>
+
+    </div>
+
 </section>
 
 
 <!-- STUDENT PLACEMENTS -->
+
 <section>
-  <h2>Student Placements</h2>
 
-  <div class="placements">
+    <h2>Student Placements</h2>
 
-    <!-- Student 1 -->
-    <div class="student">
-      <img src="images/image1.png" alt="Rohit">
-      <p>
-        <b>Rohit</b><br>
-        Canara College<br>
-        Synopsys
-      </p>
+    <div class="placement-grid">
+
+        <!-- Student 1 -->
+
+        <div class="student">
+
+            <img src="images/image1.png" alt="Rohit">
+
+            <h3>Rohit</h3>
+
+            <p><b>Canara College</b></p>
+
+            <p>Placed at <b>Synopsys</b></p>
+
+        </div>
+
+
+        <!-- Student 2 -->
+
+        <div class="student">
+
+            <img src="images/image3.png" alt="Yashwin K P">
+
+            <h3>Yashwin K P</h3>
+
+            <p><b>Canara College</b></p>
+
+            <p>Placed at <b>Karmic Design</b></p>
+
+        </div>
+
+
+        <!-- Student 3 -->
+
+        <div class="student">
+
+            <img src="images/image2.png" alt="Abhay Shenoy">
+
+            <h3>Abhay Shenoy</h3>
+
+            <p><b>Canara College</b></p>
+
+            <p>Placed at <b>Sophrosyne Semiconductor</b></p>
+
+        </div>
+
+
+        <!-- Student 4 -->
+
+        <div class="student">
+
+            <img src="images/image4.png" alt="Shratik">
+
+            <h3>Shratik</h3>
+
+            <p><b>Canara College</b></p>
+
+            <p>Placed at <b>Sophrosyne Semiconductor</b></p>
+
+        </div>
+
+
+        <!-- Student 5 -->
+
+        <div class="student">
+
+            <img src="images/image5.png" alt="Muhammad Shayan Nesar">
+
+            <h3>Muhammad Shayan Nesar</h3>
+
+            <p><b>Nitte</b></p>
+
+            <p>Placed at <b>Texas Instruments</b></p>
+
+        </div>
+
+
+        <!-- Student 6 -->
+
+        <div class="student">
+
+            <img src="images/image6.png" alt="Pavitra Poojary">
+
+            <h3>Pavitra Poojary</h3>
+
+            <p><b>NMAMIT, Karkala</b></p>
+
+            <p>Placed at <b>Karmic</b></p>
+
+        </div>
+
+
+        <!-- Student 7 -->
+
+        <div class="student">
+
+            <img src="images/image7.png" alt="Shainy">
+
+            <h3>Shainy</h3>
+
+            <p><b>MITE</b></p>
+
+            <p>Placed at <b>Mirafra</b></p>
+
+        </div>
+
     </div>
 
-    <!-- Student 2 -->
-    <div class="student">
-      <img src="images/image3.png" alt="Yashwin K P">
-      <p>
-        <b>Yashwin K P</b><br>
-        Canara College<br>
-        Karmic Design
-      </p>
-    </div>
-
-    <!-- Student 3 -->
-    <div class="student">
-      <img src="images/image2.png" alt="Abhay Shenoy">
-      <p>
-        <b>Abhay Shenoy</b><br>
-        Canara College<br>
-        Sophrosyne Semiconductor
-      </p>
-    </div>
-
-    <!-- Student 4 -->
-    <div class="student">
-      <img src="images/image4.png" alt="Shratik">
-      <p>
-        <b>Shratik</b><br>
-        Canara College<br>
-        Sophrosyne Semiconductor
-      </p>
-    </div>
-
-    <!-- Student 5 -->
-    <div class="student">
-      <img src="images/image5.png" alt="Muhammad Shayan Nesar">
-      <p>
-        <b>Muhammad Shayan Nesar</b><br>
-        Nitte<br>
-        Texas Instruments
-      </p>
-    </div>
-
-    <!-- Student 6 -->
-    <div class="student">
-      <img src="images/image6.png" alt="Pavitra Poojary">
-      <p>
-        <b>Pavitra Poojary</b><br>
-        NMAMIT, Karkala<br>
-        Karmic
-      </p>
-    </div>
-
-    <!-- Student 7 -->
-    <div class="student">
-      <img src="images/image7.png" alt="Shainy">
-      <p>
-        <b>Shainy</b><br>
-        MITE<br>
-        Mirafra
-      </p>
-    </div>
-
-  </div>
 </section>
 
 
-<!-- WHY US -->
+<!-- WHY CHOOSE US -->
+
 <section>
-  <h2>Why Choose Us?</h2>
 
-  <div class="features">
+    <h2>Why Choose Octawave Technology?</h2>
 
-    <div class="feature-box">
-      <b>Industry-Oriented Training</b>
+    <div class="features">
+
+        <div class="feature">
+
+            <h3>Industry-Oriented Training</h3>
+
+            <p>
+                Learn concepts and skills aligned with
+                real VLSI industry requirements.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <h3>Hands-on Practical Learning</h3>
+
+            <p>
+                Focus on practical exercises, design,
+                debugging and real-world problem solving.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <h3>Internship & Live Projects</h3>
+
+            <p>
+                Get practical exposure through projects
+                and internship-oriented learning.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <h3>Career Guidance</h3>
+
+            <p>
+                Technical guidance, resume support and
+                VLSI interview preparation.
+            </p>
+
+        </div>
+
     </div>
 
-    <div class="feature-box">
-      <b>Hands-on Practical Learning</b>
-    </div>
+</section>
 
-    <div class="feature-box">
-      <b>Internship & Live Projects</b>
-    </div>
 
-    <div class="feature-box">
-      <b>Career Guidance</b>
-    </div>
+<!-- CONTACT -->
 
-  </div>
+<section class="contact">
+
+    <h2>Contact Octawave Technology</h2>
+
+    <p>
+        <b>Location:</b> Mangalore, Karnataka
+    </p>
+
+    <p>
+        <b>Phone:</b>
+        <a href="tel:7349565249">
+            7349565249
+        </a>
+    </p>
+
+    <p>
+        <b>Email:</b>
+        <a href="mailto:manjunathshet12@gmail.com">
+            manjunathshet12@gmail.com
+        </a>
+    </p>
+
+    <p>
+        Interested in VLSI training, projects or internships?
+        <br>
+        Contact us to know more.
+    </p>
+
 </section>
 
 
 <!-- FOOTER -->
+
 <footer>
 
-  <h2>Contact Us</h2>
+    <p>
+        © 2025 Octawave Technology. All Rights Reserved.
+    </p>
 
-  <p>📍 Mangalore</p>
-
-  <p>
-    📞 <a href="tel:7349565249">7349565249</a>
-  </p>
-
-  <p>
-    📧 manjunathshet12@gmail.com
-  </p>
-
-  <p>
-    © 2025 Octawave Technology
-  </p>
+    <p>
+        Mangalore | VLSI Training & Project Support
+    </p>
 
 </footer>
 
+
 </body>
 </html>
-```
